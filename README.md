@@ -5,7 +5,7 @@
 <h1 align="center">📝 To-Do List Application</h1>
 
 <p align="center">
-A Python-based <b>To-Do List Application</b> built using <b>Python</b> and basic programming concepts to help users efficiently manage daily tasks through a console-based interface.
+A Python-based To-Do List Application built using <b>Python</b>. It allows users to manage daily tasks with features like adding, updating, deleting, searching, sorting, and tracking task status.
 </p>
 
 <p align="center">
@@ -14,9 +14,7 @@ A Python-based <b>To-Do List Application</b> built using <b>Python</b> and basic
 
 <img src="https://img.shields.io/badge/Console%20Application-4CAF50?style=for-the-badge"/>
 
-<img src="https://img.shields.io/badge/CRUD%20Operations-FF9800?style=for-the-badge"/>
-
-<img src="https://img.shields.io/badge/Python%20Lists-9C27B0?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Menu%20Driven-FF9800?style=for-the-badge"/>
 
 </p>
 
@@ -24,9 +22,9 @@ A Python-based <b>To-Do List Application</b> built using <b>Python</b> and basic
 
 # 📌 Overview
 
-The To-Do List Application is a console-based Python project that allows users to organize and manage their daily tasks efficiently. It provides essential task management features such as adding, updating, deleting, searching, and tracking task completion.
+This is a menu-driven To-Do List Application developed in Python. It helps users organize daily tasks efficiently through a simple console interface.
 
-This project demonstrates the use of Python fundamentals including loops, conditional statements, lists, dictionaries, functions, and menu-driven programming.
+Users can create tasks, update them, delete them, search tasks, mark them as completed or pending, sort by priority, and view task statistics.
 
 ---
 
@@ -35,16 +33,16 @@ This project demonstrates the use of Python fundamentals including loops, condit
 - ➕ Add New Task
 - 📋 View All Tasks
 - ✏️ Update Existing Task
-- ❌ Delete Task
+- 🗑️ Delete Task
 - 🔍 Search Task
 - 📊 Count Total Tasks
 - ✅ Mark Task as Completed
 - ⏳ Mark Task as Pending
-- 📂 View Completed Tasks
+- 📁 View Completed Tasks
 - 📂 View Pending Tasks
-- ⭐ Sort Tasks by Priority
+- 🔥 Sort Tasks by Priority
 - 📈 Show Task Statistics
-- 🗑️ Clear All Tasks
+- 🧹 Clear All Tasks
 - 🚪 Exit Application
 
 ---
@@ -52,11 +50,11 @@ This project demonstrates the use of Python fundamentals including loops, condit
 # 🛠️ Technologies Used
 
 - Python
-- Lists & Dictionaries
-- Conditional Statements
+- Lists
+- Dictionaries
 - Loops
+- Conditional Statements
 - Exception Handling
-- Menu-Driven Programming
 
 ---
 
@@ -68,26 +66,32 @@ To-Do-List-Application/
 ├── todo_list.py
 ├── README.md
 ├── .gitignore
+├── todo-banner.png
 └── screenshots/
+    ├── menu.png
+    ├── add-task.png
+    ├── view-task.png
+    ├── completed-task.png
+    └── statistics.png
 ```
 
 ---
 
 # 🚀 How to Run
 
-### 1️⃣ Clone the repository
+### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/Tehmina124/todo-list-application.git
+git clone https://github.com/Tehmina124/To-Do-List-Application.git
 ```
 
-### 2️⃣ Navigate to the project folder
+### 2️⃣ Open Project Folder
 
 ```bash
-cd todo-list-application
+cd To-Do-List-Application
 ```
 
-### 3️⃣ Run the application
+### 3️⃣ Run the Program
 
 ```bash
 python todo_list.py
@@ -95,30 +99,60 @@ python todo_list.py
 
 ---
 
+# 📸 Screenshots
+
+## 🏠 Main Menu
+
+![Menu](screenshots/menu.png)
+
+---
+
+## ➕ Add Task
+
+![Add Task](screenshots/add-task.png)
+
+---
+
+## 📋 View Tasks
+
+![View Task](screenshots/view-task.png)
+
+---
+
+## ✅ Completed Task
+
+![Completed Task](screenshots/completed-task.png)
+
+---
+
+## 📊 Statistics
+
+![Statistics](screenshots/statistics.png)
+
+---
+
 # 🎯 Learning Outcomes
 
-This project helped me strengthen my understanding of:
+This project helped me improve my understanding of:
 
 - Python Programming
 - CRUD Operations
 - Lists & Dictionaries
-- Loops and Conditional Statements
-- Exception Handling
 - Menu-Driven Applications
+- Exception Handling
 - Problem Solving
+- Console-Based Projects
 
 ---
 
 # 🔮 Future Improvements
 
-- 💾 Save Tasks in File (JSON/CSV)
-- 🗓️ Due Date Reminder
-- 🔔 Notifications
+- 💾 Save Tasks in a File
 - 🖥️ GUI using Tkinter
 - 🌐 Web Version using Streamlit
-- 🗄️ Database Integration
-- 📊 Task Progress Dashboard
-- 👤 User Authentication
+- 🗄️ Database Integration (SQLite/MySQL)
+- 🔔 Task Reminder System
+- 📅 Calendar Integration
 
 ---
 
@@ -126,7 +160,7 @@ This project helped me strengthen my understanding of:
 
 Contributions, suggestions, and feedback are always welcome.
 
-If you like this project, consider giving it a ⭐.
+If you like this project, don't forget to ⭐ the repository.
 
 ---
 
@@ -136,22 +170,22 @@ If you like this project, consider giving it a ⭐.
 
 **AI/ML Engineer | Python Developer**
 
-🌐 **Portfolio:**  
+🌐 **Portfolio**  
 https://tehmina-portfolio-five.vercel.app/
 
-💼 **LinkedIn:**  
+💼 **LinkedIn**  
 https://www.linkedin.com/in/tehmina-anwar-77b8a8414/
 
-💻 **GitHub:**  
+💻 **GitHub**  
 https://github.com/Tehmina124
 
-📧 **Email:**  
+📧 **Email**  
 Tehminaanwar713@gmail.com
 
 ---
 
 <p align="center">
 
-⭐ Building intelligent AI solutions that create real-world impact.
+⭐ Thank you for visiting my repository!
 
 </p>
