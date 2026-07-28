@@ -1,20 +1,26 @@
 <p align="center">
-  <img src="todo-banner.png" width="100%" alt="To-Do List Application Banner">
+  <img src="./career-banner.png" alt="AI Career Recommendation Engine Banner" width="100%">
 </p>
 
-<h1 align="center">📝 To-Do List Application</h1>
+<h1 align="center">🤖 AI Career Recommendation Engine</h1>
 
 <p align="center">
-A Python-based To-Do List Application built using <b>Python</b>. It allows users to manage daily tasks with features like adding, updating, deleting, searching, sorting, and tracking task status.
+An AI-powered Career Recommendation System built using <b>Python</b>, <b>Machine Learning</b>, and <b>Natural Language Processing (NLP)</b>. It analyzes user skills and interests to recommend the most suitable career path with confidence scores.
 </p>
 
 <p align="center">
 
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
 
-<img src="https://img.shields.io/badge/Console%20Application-4CAF50?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Machine%20Learning-FF9800?style=for-the-badge"/>
 
-<img src="https://img.shields.io/badge/Menu%20Driven-FF9800?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/NLP-4CAF50?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/Gradio-FF6F00?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/HuggingFace-FFD21F?style=for-the-badge"/>
 
 </p>
 
@@ -22,57 +28,57 @@ A Python-based To-Do List Application built using <b>Python</b>. It allows users
 
 # 📌 Overview
 
-This is a menu-driven To-Do List Application developed in Python. It helps users organize daily tasks efficiently through a simple console interface.
+The **AI Career Recommendation Engine** is a Machine Learning project that helps students and professionals discover suitable career paths based on their skills, interests, and technical knowledge.
 
-Users can create tasks, update them, delete them, search tasks, mark them as completed or pending, sort by priority, and view task statistics.
+Using **Natural Language Processing (NLP)** and a trained Machine Learning model, the system analyzes user input and predicts the most appropriate career along with a confidence score.
+
+The application is built with **Gradio**, providing a simple and interactive user interface.
 
 ---
 
 # ✨ Features
 
-- ➕ Add New Task
-- 📋 View All Tasks
-- ✏️ Update Existing Task
-- 🗑️ Delete Task
-- 🔍 Search Task
-- 📊 Count Total Tasks
-- ✅ Mark Task as Completed
-- ⏳ Mark Task as Pending
-- 📁 View Completed Tasks
-- 📂 View Pending Tasks
-- 🔥 Sort Tasks by Priority
-- 📈 Show Task Statistics
-- 🧹 Clear All Tasks
-- 🚪 Exit Application
+- 🤖 AI-based Career Recommendation
+- 🎯 Personalized Career Prediction
+- 🧠 NLP Text Processing
+- 🔤 TF-IDF Text Vectorization
+- 📊 Confidence Score Prediction
+- ⚡ Fast Machine Learning Predictions
+- 🌐 Interactive Gradio Interface
+- 🚀 Hugging Face Deployment
 
 ---
 
 # 🛠️ Technologies Used
 
 - Python
-- Lists
-- Dictionaries
-- Loops
-- Conditional Statements
-- Exception Handling
+- Scikit-learn
+- Pandas
+- NumPy
+- Joblib
+- Gradio
+- Natural Language Processing (NLP)
+- TF-IDF Vectorizer
+- Logistic Regression
 
 ---
 
 # 📂 Project Structure
 
 ```text
-To-Do-List-Application/
+AI-Career-Recommendation-Engine/
 │
-├── todo_list.py
+├── app.py
+├── train.py
+├── career_model.pkl
+├── vectorizer.pkl
+├── requirements.txt
 ├── README.md
-├── .gitignore
-├── todo-banner.png
+├── career-banner.png
 └── screenshots/
-    ├── menu.png
-    ├── add-task.png
-    ├── view-task.png
-    ├── completed-task.png
-    └── statistics.png
+    ├── home.png
+    ├── prediction.png
+    └── result.png
 ```
 
 ---
@@ -82,77 +88,128 @@ To-Do-List-Application/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/Tehmina124/To-Do-List-Application.git
+git clone https://github.com/Tehminaanwar543/AI-Career-Recommendation-Engine.git
 ```
 
 ### 2️⃣ Open Project Folder
 
 ```bash
-cd To-Do-List-Application
+cd AI-Career-Recommendation-Engine
 ```
 
-### 3️⃣ Run the Program
+### 3️⃣ Install Dependencies
 
 ```bash
-python todo_list.py
+pip install -r requirements.txt
 ```
+
+### 4️⃣ Run the Application
+
+```bash
+python app.py
+```
+
+The Gradio interface will open automatically in your browser.
 
 ---
 
 # 📸 Screenshots
 
-## 🏠 Main Menu
+## 🏠 Home Page
 
-![Menu](screenshots/menu.png)
-
----
-
-## ➕ Add Task
-
-![Add Task](screenshots/add-task.png)
+![Home](screenshots/home.png)
 
 ---
 
-## 📋 View Tasks
+## 📝 User Input
 
-![View Task](screenshots/view-task.png)
-
----
-
-## ✅ Completed Task
-
-![Completed Task](screenshots/completed-task.png)
+![Prediction](screenshots/prediction.png)
 
 ---
 
-## 📊 Statistics
+## 🎯 Career Recommendation Result
 
-![Statistics](screenshots/statistics.png)
+![Result](screenshots/result.png)
 
 ---
 
-# 🎯 Learning Outcomes
+# 🧠 Machine Learning Workflow
+
+```text
+User Skills & Interests
+          │
+          ▼
+Text Preprocessing
+          │
+          ▼
+TF-IDF Vectorization
+          │
+          ▼
+Logistic Regression Model
+          │
+          ▼
+Career Prediction
+          │
+          ▼
+Confidence Score
+```
+
+---
+
+# 🎯 Example
+
+### Input
+
+Skills
+
+```
+Python, Machine Learning, Data Analysis
+```
+
+Interest
+
+```
+Artificial Intelligence, Data Science
+```
+
+### Output
+
+```
+Recommended Career
+
+AI Engineer
+
+Confidence Score
+
+85%
+```
+
+---
+
+# 📚 Learning Outcomes
 
 This project helped me improve my understanding of:
 
 - Python Programming
-- CRUD Operations
-- Lists & Dictionaries
-- Menu-Driven Applications
-- Exception Handling
-- Problem Solving
-- Console-Based Projects
+- Machine Learning
+- Natural Language Processing (NLP)
+- Text Classification
+- Feature Engineering
+- Model Training
+- Model Deployment
+- Gradio Applications
 
 ---
 
 # 🔮 Future Improvements
 
-- 💾 Save Tasks in a File
-- 🖥️ GUI using Tkinter
-- 🌐 Web Version using Streamlit
-- 🗄️ Database Integration (SQLite/MySQL)
-- 🔔 Task Reminder System
-- 📅 Calendar Integration
+- 🤖 AI Career Chatbot
+- 📚 Personalized Learning Roadmap
+- 🎓 Course Recommendations
+- 📄 Resume Analysis
+- 📈 Improve Model Accuracy
+- 🌍 Multi-language Support
+- 📱 Mobile Application
 
 ---
 
@@ -171,13 +228,13 @@ If you like this project, don't forget to ⭐ the repository.
 **AI/ML Engineer | Python Developer**
 
 🌐 **Portfolio**  
-https://tehmina-portfolio-five.vercel.app/
+https://tehmina-portfolio.vercel.app/
 
 💼 **LinkedIn**  
 https://www.linkedin.com/in/tehmina-anwar-77b8a8414/
 
 💻 **GitHub**  
-https://github.com/Tehmina124
+https://github.com/Tehminaanwar543
 
 📧 **Email**  
 Tehminaanwar713@gmail.com
@@ -187,5 +244,7 @@ Tehminaanwar713@gmail.com
 <p align="center">
 
 ⭐ Thank you for visiting my repository!
+
+If you found this project useful, please consider giving it a ⭐.
 
 </p>
