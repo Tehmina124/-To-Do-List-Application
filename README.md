@@ -1,4 +1,4 @@
-kia kro yaar acha sa bna do  yar<p align="center">
+<p align="center">
   <img src="todo-banner.png" width="100%" alt="To-Do List Application Banner">
 </p>
 
