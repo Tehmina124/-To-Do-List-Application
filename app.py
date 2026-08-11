@@ -11,12 +11,18 @@ st.set_page_config(
     layout="wide"
 )
 
-# ---------- Session State ----------
+# ============================================
+# SESSION STATE
+# ============================================
+
 if "tasks" not in st.session_state:
     st.session_state.tasks = []
 
 
-# ---------- Helper ----------
+# ============================================
+# HELPER FUNCTION
+# ============================================
+
 def display_task(task, index):
     st.write(f"### {index}. {task['task']}")
     st.write(f"**Priority:** {task['priority']}")
@@ -25,11 +31,22 @@ def display_task(task, index):
     st.divider()
 
 
-# ---------- Title ----------
-st.title("📝 To-Do List Application")
-st.write("Manage your daily tasks with priority, due dates and status tracking.")
+# ============================================
+# TITLE
+# ============================================
 
-# ---------- Sidebar ----------
+st.title("📝 To-Do List Application")
+
+st.write(
+    "Manage your daily tasks with priority, due dates "
+    "and status tracking."
+)
+
+
+# ============================================
+# SIDEBAR
+# ============================================
+
 st.sidebar.title("📋 Task Manager")
 
 menu = st.sidebar.radio(
@@ -76,12 +93,14 @@ if menu == "➕ Add Task":
 
         else:
 
-            st.session_state.tasks.append({
-                "task": task.strip(),
-                "priority": priority,
-                "due_date": due_date.strftime("%d-%m-%Y"),
-                "status": "Pending"
-            })
+            st.session_state.tasks.append(
+                {
+                    "task": task.strip(),
+                    "priority": priority,
+                    "due_date": due_date.strftime("%d-%m-%Y"),
+                    "status": "Pending"
+                }
+            )
 
             st.success("✅ Task Added Successfully!")
 
@@ -155,11 +174,18 @@ elif menu == "✏️ Update Task":
 
         if st.button("💾 Update Task"):
 
-            tasks[index]["task"] = new_task
-            tasks[index]["priority"] = new_priority
-            tasks[index]["due_date"] = new_due_date
+            if new_task.strip() == "":
+                st.error("Task cannot be empty!")
 
-            st.success("✅ Task Updated Successfully!")
+            else:
+
+                tasks[index]["task"] = new_task.strip()
+                tasks[index]["priority"] = new_priority
+                tasks[index]["due_date"] = new_due_date
+
+                st.success(
+                    "✅ Task Updated Successfully!"
+                )
 
 
 # ============================================
@@ -425,13 +451,22 @@ elif menu == "📊 Statistics":
     col1, col2, col3 = st.columns(3)
 
     with col1:
-        st.metric("📋 Total", total)
+        st.metric(
+            "📋 Total",
+            total
+        )
 
     with col2:
-        st.metric("✅ Completed", completed)
+        st.metric(
+            "✅ Completed",
+            completed
+        )
 
     with col3:
-        st.metric("⏳ Pending", pending)
+        st.metric(
+            "⏳ Pending",
+            pending
+        )
 
 
 # ============================================
@@ -480,4 +515,3 @@ st.sidebar.divider()
 st.sidebar.caption(
     "© 2026 Tehmina Anwar | To-Do List Application"
 )
-```
